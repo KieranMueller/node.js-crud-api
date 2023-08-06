@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "b02b7a87-c778-4554-9e16-f207c2d0071f",
+		"name": "node-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26504106"
+	},
+	"item": [
+		{
+			"name": "GET all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/api/employees"
+			},
+			"response": []
+		},
+		{
+			"name": "GET employee by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/api/employees/4"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE employee by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:3000/api/employees/3"
+			},
+			"response": []
+		},
+		{
+			"name": "POST create employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Gaara\",\r\n    \"employee_code\": \"111\",\r\n    \"salary\": 90000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/api/employees"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT update employee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Gaara\",\r\n    \"employee_code\": \"1112\",\r\n    \"salary\": 90000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/api/employees/6"
+			},
+			"response": []
+		}
+	]
+}
